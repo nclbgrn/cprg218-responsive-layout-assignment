@@ -5,3 +5,14 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: #120323;
+    color: #97bf04;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
