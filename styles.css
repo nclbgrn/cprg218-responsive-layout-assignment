@@ -16,3 +16,32 @@ header img {
     display: block;
     margin: 0 auto;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.puffin-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.puffin-section img {
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid #d9043d;
+}
+
+.sidebar {
+    background-color: #97bf04;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
