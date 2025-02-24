@@ -16,6 +16,7 @@ header img {
     display: block;
     margin: 0 auto;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -23,6 +24,16 @@ header img {
     padding: 20px;
 }
 
+.puffin-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Puffin Section */
 .puffin-section {
     display: flex;
     flex-direction: column;
@@ -44,4 +55,12 @@ header img {
     width: 100%;
     text-align: center;
 }
+
+footer {
+    background-color: #d9043d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 
