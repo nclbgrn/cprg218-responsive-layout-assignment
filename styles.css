@@ -57,36 +57,31 @@ main {
     font-size: 16px;
     line-height: 1.5;
   }
-  
-/* Puffin Section */
-.puffin-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-}
-
-.puffin-section img {
-    width: 100%;
-    max-width: 300px;
-    border: 5px solid #d9043d;
-}
-
-.sidebar {
+  /* Sidebar */
+aside {
+    flex: 1;
     background-color: #97bf04;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-}
-
-footer {
+    padding: 20px;
+    color: black;
+  }
+  
+  aside h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  aside p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Footer */
+  footer {
     background-color: #d9043d;
     color: white;
     text-align: center;
     padding: 10px;
-}
+  }
 
 /* Responsive Styles */
 @media (min-width: 768px) {
