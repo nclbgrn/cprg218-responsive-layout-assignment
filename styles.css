@@ -22,8 +22,9 @@ body {
 }
 
 .header-container img {
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
+    max-width: 150px;
 }
 
 .header-container h1 {
@@ -34,8 +35,8 @@ body {
 #container {
     display: flex;
     flex: 1;
-    padding: 20px;
-    gap: 20px;
+    padding: 2rem;
+    gap: 2rem;
     margin-right: 0;
     flex-wrap: wrap;
 }
@@ -109,12 +110,14 @@ footer {
 @media screen and (min-width: 1000px) {
     #container {
         display: flex;
+        flex-direction: row;
         width: 100%;
+        gap: 2rem;
     }
 
     main {
         flex-direction: row;
-        gap: 20px;
+        gap: 2rem;
     }
 
     aside {
@@ -124,16 +127,35 @@ footer {
     }
 }
 
-/* Tablet and Mobile Breakpoint */
-@media screen and (max-width: 768px) {
+/* Tablet Breakpoint */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
     #container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     aside {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    aside {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    figure {
+        flex: 1 1 100%;
     }
 }
