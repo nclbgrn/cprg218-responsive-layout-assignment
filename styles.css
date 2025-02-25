@@ -3,8 +3,10 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
+/* Header */
 header {
     background-color: #120323;
     color: #97bf04;
@@ -13,26 +15,49 @@ header {
 }
 
 header img {
-    display: block;
-    margin: 0 auto;
-}
+    height: 80px;
+    margin-right: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
 
+/* Layout */
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
 }
 
-.puffin-section {
+/* Main Content */
+main {
+    flex: 2;
+    padding: 20px;
+    background: white;
+  }
+  figure {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-}
-
+  }
+  
+  figure img {
+    max-width: 300px;
+    border: 5px solid #d9043d;
+    margin-right: 20px;
+  }
+  
+  figcaption h2 {
+    font-size: 22px;
+  }
+  
+  figcaption p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
 /* Puffin Section */
 .puffin-section {
     display: flex;
