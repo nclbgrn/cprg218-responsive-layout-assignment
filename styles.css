@@ -131,9 +131,13 @@ footer {
         flex-direction: column;
     }
 
+    figure img {
+        max-width: 250px; /* Smaller image on tablet */
+    }
+
     aside {
         width: 100%;
-        order: 2; /* Ensures the sidebar moves to the bottom */
+        order: 2; /* Moves sidebar to the bottom */
     }
 }
 
@@ -147,11 +151,17 @@ footer {
 
     figure {
         flex: 1 1 100%;
+        width: 100%;
+    }
+
+    figure img {
+        max-width: 200px; /* Further reduced for mobile */
     }
 
     aside {
         width: 100%;
-        order: 2;
+        order: 2; /* Ensures sidebar is always at the bottom */
     }
 }
+
   
