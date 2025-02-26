@@ -21,7 +21,6 @@ body {
     padding: 1rem;
 }
 
-/* Ensure the logo is positioned to the left of the title */
 .header-container img {
     max-width: 150px;
     height: auto;
@@ -102,10 +101,13 @@ footer {
 /* Desktop Breakpoint (≥1000px) */
 @media screen and (min-width: 1000px) {
     #container {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        width: 100%; /* Ensures full width usage */
     }
+    
 
     main {
         flex-direction: row;
@@ -131,10 +133,11 @@ footer {
 
     aside {
         flex: 0 0 25%;
-        margin-left: auto;
         text-align: left;
-        width: auto;
-    }
+        width: 25%;
+        margin-right: 0; /* Ensure no extra margin */
+        align-self: stretch; /* Makes sidebar take full height */
+    }    
 }
 
 
