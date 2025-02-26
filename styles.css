@@ -118,10 +118,15 @@ footer {
         flex-direction: row;
         align-items: flex-start;
         width: auto;
+        margin-right: 30px; /* Added spacing between the image and the text */
     }
 
     figure img {
         max-width: 300px;
+    }
+
+    figcaption {
+        margin-left: 30px; /* Pushes the text away from the image */
     }
 
     aside {
@@ -131,6 +136,7 @@ footer {
         width: auto;
     }
 }
+
 
 /* Tablet Breakpoint (768px - 1000px) */
 @media screen and (max-width: 1000px) and (min-width: 768px) {
